@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Satisfy';
+    </style>
+    <title>Sub service</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Index.html">
+            <img src="img\estudiarNAV.png" width="30" height="30" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2.html">Catalogo<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Main-Image-->
+    <div class="content">
+        <div class="main-section">
+            <div class="main-section-text">
+                <p class="main-title">
+                    Bienvenido a Léeme <img src="img\estudiar.png" width="50px" height="60px">
+                </p>
+
+                <p class="main-description">
+                    Una puerta a un nuevo mundo.
+
+                </p>
+
+            </div>
+            <img class="main-section-img" src="img\main.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <!--vue form-->
+    <div class="cont-section">
+        <div class="cont">
+
+            <p class="lee">Subscríbete</p>
+
+
+            <form id="app" @submit="checkForm" action="https://submit-form.com/iWokFyaRVu2IELpsTExYQ" method="post" novalidate="true">
+
+
+
+
+                <div class="form">
+
+
+
+                    <label for="name">Name<label></label>
+                    <br>
+                    <input class="form-control" type="text" name="name" id="name" v-model="name">
+                    <br>
+                    <label class="lab_email" for="email">Email<label></label>
+                    <br>
+                    <input class="form-control" type="email" name="email" id="email" v-model="email">
+
+                    <input class="btn btn-light sub" type="submit" value="Submit">
+                    <!--arreglar-->
+
+
+                    <p v-if="errors.length">
+                        <b>Please correct the following error(s):</b>
+                        <ul>
+                            <li v-for="error in errors">{{ error }}</li>
+                        </ul>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- seccion del mapa-->
+
+
+    <div class="map-section">
+        <div class="map-text">Buscar puntos de venta!</div>
+        <div id="map"></div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+        <footer>
+            <p>This is for a school project</p>
+        </footer>
+    </div>
+    <!---->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="javascripts\script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    <script src="javascripts\form.js"></script>
+</body>
+
+</html>

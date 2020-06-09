@@ -1,0 +1,148 @@
+.footer {
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration-color: black;
+}
+
+.content {
+    height: 400px;
+    margin-bottom: 15px;
+}
+
+.main-section {
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+.main-section-text {
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    font-family: 'Satisfy', sans-serif;
+    text-shadow: 2px 2px black;
+    height: 250px;
+    margin-bottom: 150px;
+}
+
+.main-title {
+    color: white;
+    font-size: 3.0em;
+    margin-top: 0px;
+}
+
+.main-section-img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-description {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 0px;
+}
+
+
+/*.About-container{
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+        }
+        .About-us{
+            font-family: sans-serif;
+            text-align: center;
+            background-image: url(/img/gg.jpg);
+            padding: 10px;
+            margin-top: 15px;
+        }
+        .About-Desc{
+            margin-left: 70px;
+            margin-right: 70px;
+        }*/
+
+.map-section {
+    background-color: darkcyan;
+    padding: 2px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map {
+    height: 350px;
+    width: 100%;
+}
+
+.map-text {
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* aqui empecé*/
+
+
+/* formulario*/
+
+.form {
+    background-color: black;
+    opacity: 0.8;
+    max-height: 100%;
+    width: 98%;
+    max-width: 400px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    font-family: 'calibri';
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+/* titulo */
+
+.lee {
+    padding-top: 90px;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+/* submit*/
+
+.sub {
+    margin-left: 250px;
+    background-color: aliceblue;
+}
+
+
+/* contenedor de seccion*/
+
+.cont-section {
+    background-image: url(gg.jpg);
+    background-size: cover;
+    margin-top: 10px;
+    height: 600px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+.email,
+.name {
+    width: 300px;
+}
+
+.lab_email {
+    margin-top: 45px;
+}
+
+.sub {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 240px;
+}

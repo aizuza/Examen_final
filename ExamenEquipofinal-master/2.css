@@ -1,0 +1,17 @@
+.list-section {
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.list-group-item {
+    padding-top: 30;
+    padding-bottom: 30;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+}
+
+.about-book {
+    text-align: center;
+}
